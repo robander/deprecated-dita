@@ -20,3 +20,18 @@ DITA-OT 3.0.3 in order to get the same results, after a defect in [`<navtitle>` 
 The plugin does **not** yet identify any markup that might be changed or removed for
 other reasons, because few proposals are advanced enough to know for sure that
 other markup is being removed.
+
+## To use
+
+Install the latest version from https://github.com/robander/deprecated-dita/releases
+
+To install version 0.1 from the DITA-OT command line, in the DITA-OT root directory, run:
+
+`bin/dita --install https://github.com/robander/deprecated-dita/releases/download/v0.1/org.metadita.deprecated.zip`
+
+To use the plugin, add the parameter `report.deprecated=true` to any DITA-OT transform that uses the full
+preprocess pipeline. For example, using the DITA-OT documentation:
+
+`bin/dita --input=docsrc/userguide.ditamap --format=html5 --report.deprecated=true`
+
+The log will contain informational messages for all deprecated markup.
