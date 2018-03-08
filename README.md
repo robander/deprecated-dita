@@ -6,7 +6,7 @@ messages about markup that is deprecated in DITA 1.x and will be removed in DITA
 
 This is a quick and dirty way to find some of the most common markup. As of now,
 it only notifies about markup that was officially marked deprecated or do-not-use
-in DITA 1.x, based on the [DITA 2.0 proposal to remove deprecated markup](https://lists.oasis-open.org/archives/dita/201802/msg00077.html)
+in DITA 1.x, based on the [DITA 2.0 proposal to remove deprecated markup](https://lists.oasis-open.org/archives/dita/201803/msg00024.html)
 
 The informational messages from the plugin help to locate each use of the deprecated
 markup. The only non-specific message is for `@navtitle`; because maps that use this
