@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+  <message id="DEP001I" type="INFO">
+    <reason>Found the deprecated @navtitle attribute on %1 elements in this document.</reason>
+    <response>The navtitle element inside topicmeta should be used instead.</response>
+  </message>
+  <message id="DEP002I" type="INFO">
+    <reason>Found the deprecated '%1' attribute on the '%2' element.</reason>
+    <response>The %1 element inside the image should be used instead.</response>
+  </message>
+  <message id="DEP003I" type="INFO">
+    <reason>Found the deprecated %1 element.</reason>
+    <response>This element has no defined purpose and will be removed.</response>
+  </message>
+  <message id="DEP004I" type="INFO">
+    <reason>Found the collection-type attribute with the deprecated value "tree".</reason>
+    <response>This value has no defined purpose and will be removed.</response>
+  </message>
+  <message id="DEP005I" type="INFO">
+    <reason>Found the deprecated '%1' attribute on the '%2' element.</reason>
+    <response>This attribute has no purpose on '%2' and will be removed.</response>
+  </message>
+  <message id="DEP006I" type="INFO">
+    <reason>Found @keyref on a navref element.</reason>
+    <response>This attribute has no purpose on navref and will be removed.</response>
+  </message>
+  <message id="DEP007I" type="INFO">
+    <reason>Found the deprecated @print attribute on the '%1' element.</reason>
+    <response>The deliveryTarget attribute should be used instead.</response>
+  </message>
+  <message id="DEP008I" type="INFO">
+    <reason>Found the deprecated @query attribute on the '%1' element.</reason>
+    <response>This attribute has no defined purpose and will be removed.</response>
+  </message>
+  <message id="DEP009I" type="INFO">
+    <reason>Found the deprecated @refcols attribute on the '%1' element.</reason>
+    <response>This attribute has no defined purpose and will be removed.</response>
+  </message>
+  <message id="DEP010I" type="INFO">
+    <reason>Found role=%1 on the '%2' element.</reason>
+    <response>The "sample" and "external" values for @role were defined in error and will be removed.</response>
+  </message>
+  <message id="DEP011I" type="INFO">
+    <reason>Found the deprecated @title attribute on the root map element.</reason>
+    <response>The @title value should be moved to a title element.</response>
+  </message>
+  <message id="DEP012I" type="INFO">
+    <reason>Found type=%1 on the '%2' element.</reason>
+    <response>The "internal" and "external" values for @type were defined in error and will be removed.</response>
+  </message>
+  <message id="DEP013I" type="INFO">
+    <reason>Found the deprecated value chunk="to-navigation" on the '%1' element.</reason>
+    <response>The "to-navigation" value is deprecated and will be removed.</response>
+  </message>
+</messages>  

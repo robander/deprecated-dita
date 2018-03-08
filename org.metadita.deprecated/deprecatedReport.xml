@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:dita="http://dita-ot.sourceforge.net" name="report-deprecated-markup"
+  xmlns:if="ant:if"
+  xmlns:unless="ant:unless">
+
+  <target name="report-deprecated-markup" depends="report-deprecated.init, report-deprecated">
+  </target>
+  
+  <target name="report-deprecated.init">
+    <condition property="run.deprecated.report" value="true">
+      <equals arg1="${report.deprecated}" arg2="true"/>
+    </condition>
+  </target>
+    
+  <target name="report-deprecated" if="run.deprecated.report">
+    <pipeline message="Log deprecated markup constructs" taskname="report-deprecated-markup">
+      <xslt basedir="${dita.temp.dir}"
+            reloadstylesheet="${dita.preprocess.reloadstylesheet}"
+            style="${dita.plugin.org.metadita.deprecated.dir}/xsl/report-deprecated-markup.xsl"
+            filenameparameter="FILENAME">
+        <ditaFileset format="dita"/>
+        <ditaFileset format="ditamap"/>
+        <xmlcatalog refid="dita.catalog"/>
+      </xslt>
+    </pipeline>
+  </target>
+
+</project>

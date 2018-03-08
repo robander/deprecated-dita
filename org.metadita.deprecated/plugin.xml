@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="org.metadita.deprecated">
+    <feature extension="dita.conductor.target.relative" file="AntWrapper.xml"/>
+    <feature extension="depend.preprocess.post" value="report-deprecated-markup"/>
+    <feature extension="dita.xsl.messages" file="depMessages.xml"/>
+    <transtype name="base" abstract="true" desc="Common">
+        <param name="report.deprecated" desc="Specifies whether to report markup deprecated in DITA 1.x" type="enum">
+            <val>true</val>
+            <val>false</val>
+        </param>
+    </transtype>
+</plugin>

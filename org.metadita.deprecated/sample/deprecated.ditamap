@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us" title="This is a deprecated title attribute" chunk="to-navigation">
+<topicref href="topic.dita" navtitle="This is a navtitle attribute" print="yes" query="all">
+<navref keyref="whoops"/>
+</topicref>
+<topichead navtitle="hey hey navtitle" locktitle="yes">
+<topicgroup locktitle="no"/>
+</topichead>
+<reltable title="This is a test of the reltable function" collection-type="family" print="yes">
+<relheader>
+<relcolspec collection-type="sequence"/>
+<relcolspec/>
+</relheader>
+<relrow>
+<relcell>
+<topicref href="topic.dita" navtitle="This is a navtitle attribute"/>
+</relcell>
+<relcell>
+<topicref href="https://lists.oasis-open.org/archives/dita/201802/msg00059.html"
+navtitle="Deprecated stuff" format="html" scope="external"/>
+</relcell>
+</relrow>
+</reltable>
+</map>
