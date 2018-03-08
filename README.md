@@ -23,7 +23,7 @@ The plugin does **not** yet identify any markup that might be changed or removed
 other reasons, because few proposals are advanced enough to know for sure that
 other markup is being removed.
 
-## To use
+## How to use
 
 Install the latest version from https://github.com/robander/deprecated-dita/releases
 
@@ -32,8 +32,10 @@ To install version 0.1 from the DITA-OT command line, in the DITA-OT root direct
 `bin/dita --install https://github.com/robander/deprecated-dita/releases/download/v0.1/org.metadita.deprecated.zip`
 
 To use the plugin, add the parameter `report.deprecated=true` to any DITA-OT transform that uses the full
-preprocess pipeline. For example, using the DITA-OT documentation:
+preprocess pipeline. For example, the following command uses the DITA-OT user guide as an input map:
 
 `bin/dita --input=docsrc/userguide.ditamap --format=html5 --report.deprecated=true`
 
-The log will contain informational messages for all deprecated markup.
+To get a report on your own content, just change the input map parameter to your own content, and run with
+whatever format and additional parameters you usually use. The log will contain informational messages 
+for all deprecated markup.
