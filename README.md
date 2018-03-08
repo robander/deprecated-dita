@@ -13,6 +13,10 @@ markup. The only non-specific message is for `@navtitle`; because maps that use 
 attribute tend to use it a lot, the message will only report the map and a count of `@navtitle` values
 rather than generating a message for each instance.
 
+**NOTE NOTE NOTE**: If you plan to update your content to remove deprecated markup, great!
+But first, a warning. Switching from `@navtitle` to `<navtitle>` in maps requires
+DITA-OT 3.0.3 in order to get the same results, after a defect in [`<navtitle>` processing|](https://github.com/dita-ot/dita-ot/issues/2187) was [fixed in 3.0.3](https://github.com/dita-ot/dita-ot/pull/2897).
+
 The plugin does **not** yet identify any markup that might be changed or removed for
 other reasons, because few proposals are advanced enough to know for sure that
 other markup is being removed.
