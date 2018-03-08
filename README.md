@@ -21,10 +21,14 @@ other markup is being removed.
 ## Please be aware before updating!!
 
 If you plan to update your content to remove deprecated markup, great!
+
 But first, a warning. Switching from `@navtitle` to `<navtitle>` in maps requires
-DITA-OT 3.0.3 in order to get the same results, after a defect in [`<navtitle>` processing|](https://github.com/dita-ot/dita-ot/issues/2187) was [fixed in 3.0.3](https://github.com/dita-ot/dita-ot/pull/2897). All other updates (removing
+DITA-OT 3.0.3 in order to get the same results, after a defect in [`<navtitle>` processing](https://github.com/dita-ot/dita-ot/issues/2187) was [fixed in 3.0.3](https://github.com/dita-ot/dita-ot/pull/2897). 
+DITA-OT 3.0.3 is planned for release in a few days.
+
+All other updates (removing
 markup that doesn't do anything, or switching from old to new like `@alt` to `<alt>`) should be fine
-with any 2.x version of DITA-OT.
+with any 2.x version of DITA-OT. 
 
 Also: I created this because I found it a useful way to check my content,
 particularly content that is no longer edited regularly. If your editor already reports or fixes
