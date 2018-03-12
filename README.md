@@ -24,7 +24,7 @@ If you plan to update your content to remove deprecated markup, great!
 
 But first, a warning. Switching from `@navtitle` to `<navtitle>` in maps requires
 DITA-OT 3.0.3 in order to get the same results, after a defect in [`<navtitle>` processing](https://github.com/dita-ot/dita-ot/issues/2187) was [fixed in 3.0.3](https://github.com/dita-ot/dita-ot/pull/2897). 
-DITA-OT 3.0.3 is planned for release in a few days.
+DITA-OT 3.0.3 was released on 10 March 2018.
 
 All other updates (removing
 markup that doesn't do anything, or switching from old to new like `@alt` to `<alt>`) should be fine
