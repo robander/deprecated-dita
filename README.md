@@ -51,3 +51,10 @@ preprocess pipeline. For example, the following command uses the DITA-OT user gu
 To get a report on your own content, just change the input map parameter to your own content, and run with
 whatever format and additional parameters you usually use. The log will contain informational messages 
 for all deprecated markup.
+
+## Automatically updating deprecated markup
+
+Jason Fox's [DITA Validator](https://github.com/jason-fox/com.here.validate.svrl) plug-in will 
+automatically detect any of the markup reported by this
+plug-in, and apply the reccomended fix in that source file.
+You should check it out.
