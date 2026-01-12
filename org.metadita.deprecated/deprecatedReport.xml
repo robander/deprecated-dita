@@ -10,6 +10,9 @@
     <condition property="run.deprecated.report" value="true">
       <equals arg1="${report.deprecated}" arg2="true"/>
     </condition>
+    <condition property="report.only.fixable" value="false">
+      <not><isset property="report.only.fixable"/></not>
+    </condition>
   </target>
     
   <target name="report-deprecated" if="run.deprecated.report">
@@ -20,6 +23,7 @@
             filenameparameter="FILENAME">
         <ditaFileset format="dita"/>
         <ditaFileset format="ditamap"/>
+        <param name="report.only.fixable" expression="${report.only.fixable}"/>
         <xmlcatalog refid="dita.catalog"/>
       </xslt>
     </pipeline>

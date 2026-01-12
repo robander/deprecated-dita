@@ -52,4 +52,124 @@
     <reason>Found the deprecated value chunk="to-navigation" on the '%1' element.</reason>
     <response>The "to-navigation" value is deprecated and will be removed.</response>
   </message>
-</messages>  
+  <message id="DEP014I" type="INFO">
+    <reason>Found the deprecated @title attribute on a reltable element.</reason>
+    <response>The @title value should be moved to a title element.</response>
+  </message>
+  <message id="DEP015I" type="INFO">
+    <reason>Found a chunk attribute value '%1' that will need to change after migration.</reason>
+    <response>The value 'to-content' will become 'combine', and 'by-topic' will become 'split'.</response>
+  </message>
+  <message id="DEP016I" type="INFO">
+    <reason>Found the linktext element %1 times in this document.</reason>
+    <response>The linktext element will need to switch to linktitle after migration.</response>
+  </message>
+  <message id="DEP017W" type="WARN">
+    <reason>Found the copy-to attribute %1 times in this document.</reason>
+    <response>The copy-to attribute will need to change after migration to use resource IDs. The replacement is not yet well defined..</response>
+  </message>
+  <message id="DEP018I" type="INFO">
+    <reason>Found the deprecated state element.</reason>
+    <response>Depending on how this element is used, it should be migrated to use a data, phrase, or keyword element.</response>
+  </message>
+  <message id="DEP019I" type="INFO">
+    <reason>Found the deprecated "unknown" element.</reason>
+    <response>The likely target for migration is to use "required-cleanup".</response>
+  </message>
+  <message id="DEP020I" type="INFO">
+    <reason>Found the deprecated "index-sort-as" element.</reason>
+    <response>This element should be replaced with "sort-as".</response>
+  </message>
+  <message id="DEP021I" type="INFO">
+    <reason>The "titlealts" container element will be removed in DITA 2.0.</reason>
+    <response>The nested navtitle and searchtitle elements will need to move into the topic prolog.</response>
+  </message>
+  <message id="DEP022I" type="INFO">
+    <reason>The "%1" element is deprecated and will be removed.</reason>
+    <response>In most cases this should be replaced with a topicref element.</response>
+  </message>
+  <message id="DEP023I" type="INFO">
+    <reason>The "%1" element is part of the classification domain, which is deprecated and will be removed.</reason>
+    <response>If you need to retain the classification elements, ensure the domain is part of your custom map configuration.</response>
+  </message>
+  <message id="DEP024I" type="INFO">
+    <reason>The "fastpath" value for the type attribute on notes will be removed.</reason>
+    <response>The type attribute should be removed or changed to a different note type.</response>
+  </message>
+  <message id="DEP025I" type="INFO">
+    <reason>The "locktitle" attribute is being removed in DITA 2.0.</reason>
+    <response>Navigation titles in the map will be used in all cases. To store an ignorable hint as the title, use "titlehint" instead.</response>
+  </message>
+  <message id="DEP026I" type="INFO">
+    <reason>The "%1" element is part of the delayed conref domain, which is deprecated and will be removed.</reason>
+    <response>If you need to retain the delayed conref elements, ensure the domain is part of your custom map or topic configuration.</response>
+  </message>
+  <message id="DEP027I" type="INFO">
+    <reason>The substeps element is deprecated and will need to change to a steps element.</reason>
+    <response>After migration, you will need to replace the substeps element with a nested steps element.</response>
+  </message>
+  <message id="DEP028I" type="INFO">
+    <reason>The type attribute will be required on hazard statements in DITA 2.0.</reason>
+    <response>Set the type attribute to one of "caution", "danger", "notice", or "warning".</response>
+  </message>
+  <message id="DEP029I" type="INFO">
+    <reason>The "%1" value for the type attribute will no longer be valid on hazard statements in DITA 2.0.</reason>
+    <response>Set the type attribute to one of "caution", "danger", "notice", or "warning".</response>
+  </message>
+  <message id="DEP030I" type="INFO">
+    <reason>The location of the hazard symbol inside of hazard statements will move in DITA 2.0.</reason>
+    <response>After migration, you will need to move the hazard symbol into a child element, such as "typeofhazard" or "messagepanel".</response>
+  </message>
+  <message id="DEP031I" type="INFO">
+    <reason>The "lockmeta" attribute is being removed in DITA 2.0.</reason>
+    <response>The attribute should be removed from the map.</response>
+  </message>
+  <message id="DEP032I" type="INFO">
+    <reason>The "itemgroup" element is removed from DITA 2.0 in favor of the div element.</reason>
+    <response>If you are using a specialized itemgroup, you can adjust the specialization base in your grammar file without modifying the source.</response>
+  </message>
+  <message id="DEP033I" type="INFO">
+    <reason>The "otherjob" and "othertype" attributes will be removed from the audience element.</reason>
+    <response>Use the "job" and "type" attributes instead.</response>
+  </message>
+  <message id="DEP034I" type="INFO">
+    <reason>The "%1" element is part of the XNAL domain, which is deprecated and will be removed.</reason>
+    <response>If you need to retain the XNAL elements, ensure the domain is part of your custom map or topic configuration.</response>
+  </message>
+  <message id="DEP035I" type="INFO">
+    <reason>The "%1" attribute will be removed from the object element.</reason>
+    <response>This feature is also deprecated in the HTML5 object element.</response>
+  </message>
+  <message id="DEP036I" type="INFO">
+    <reason>The subjectRelTable and child elements will be removed from the Subject Scheme map.</reason>
+    <response></response>
+  </message>
+  <message id="DEP037I" type="INFO">
+    <reason>The "%1" element will be removed from the Subject Scheme map.</reason>
+    <response></response>
+  </message>
+  <message id="DEP038I" type="INFO">
+    <reason>The "specentry" and "spectitle" attributes will be removed from all elements.</reason>
+    <response></response>
+  </message>
+  <message id="DEP039I" type="INFO">
+    <reason>The "anchorref" attribute will be removed from map elements.</reason>
+    <response></response>
+  </message>
+  <message id="DEP040I" type="INFO">
+    <reason>The "%1" element will be removed.</reason>
+    <response></response>
+  </message>
+  <message id="DEP041I" type="INFO">
+    <reason>The "sectiondiv" element is removed from DITA 2.0 in favor of the div element.</reason>
+    <response>If you are using a specialized sectiondiv, you can adjust the specialization base in your grammar file without modifying the source.</response>
+  </message>
+  <message id="DEP042I" type="INFO">
+    <reason>The "mapkeyref" attribute will be removed from the "metadata" element.</reason>
+    <response></response>
+  </message>
+  <message id="DEP043I" type="INFO">
+    <reason>The "%1" element will be removed from the glossentry specialization.</reason>
+    <response></response>
+  </message>
+</messages>
