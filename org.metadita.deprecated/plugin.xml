@@ -8,5 +8,9 @@
             <val>true</val>
             <val default="true">false</val>
         </param>
+        <param name="report.only.fixable" desc="Specifies whether to report only markup that can be fixed prior to upgrading" type="enum">
+            <val>true</val>
+            <val default="true">false</val>
+        </param>
     </transtype>
 </plugin>
