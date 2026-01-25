@@ -5,18 +5,24 @@ Specifically, it adds a step into DITA-OT builds that will generate infomrationa
 messages about markup that is deprecated in DITA 1.x and will be removed in DITA 2.0.
 The primary goal is to give you some idea how much these changes will impact your content.
 
-This is a quick and dirty way to find some of the most common markup. As of now,
-it only notifies about markup that was officially marked deprecated or do-not-use
+This is a quick and dirty way to find some of the most common markup. 
+
+Version one (the initial release) notified about markup that was officially marked deprecated or do-not-use
 in DITA 1.x, based on the [DITA 2.0 proposal to remove deprecated markup](https://lists.oasis-open.org/archives/dita/201803/msg00024.html)
 
-The informational messages from the plugin help to locate each use of the deprecated
-markup. The only non-specific message is for `@navtitle`; because maps that use this
-attribute tend to use it a lot, the message will only report the map and a count of `@navtitle` values
-rather than generating a message for each instance.
+Version two (January 2026) adds additional messages about other markup that
+is changing or going away in DITA 2.0. For example, it will warn about removed
+elements like `<state>` and `<unknown>`. It will also notify about elements that will change, such as `<linktext>` moving to `<linktitle>`.  
 
-The plugin does **not** yet identify any markup that might be changed or removed for
-other reasons, because few proposals are advanced enough to know for sure that
-other markup is being removed.
+The informational messages from the plugin help to locate each use of the deprecated
+markup. A few non-specific messages will simply give a count of how often specific
+markup is used, to get a better idea of the migration job ahead. For example, maps
+that use `@navtitle` tend to use it a lot, so the message only reports the name
+of the map and the count of `@navtitle` usage.
+
+All but one of the messages in version two are informational; the only one that
+comes out as a warning is for `@copy-to`, which does not yet have a clear migration
+path in DITA 2.0.
 
 ## Please be aware before updating!!
 
@@ -39,17 +45,22 @@ to be a better way to go.
 
 Install the latest version from https://github.com/robander/deprecated-dita/releases
 
-To install version 0.1 from the DITA-OT command line, in the DITA-OT root directory, run:
+To install version 0.2 from the DITA-OT command line, in the DITA-OT root directory, run:
 
-`bin/dita --install https://github.com/robander/deprecated-dita/releases/download/v0.1/org.metadita.deprecated.zip`
+`bin/dita --install https://github.com/robander/deprecated-dita/releases/download/v0.2/org.metadita.deprecated.zip`
 
 To use the plugin, add the parameter `report.deprecated=true` to any DITA-OT transform that uses the full
 preprocess pipeline. For example, the following command uses the DITA-OT user guide as an input map:
 
 `bin/dita --input=docsrc/userguide.ditamap --format=html5 --report.deprecated=true`
 
+If you only want to see messages about markup that can be fixed _before_ the migration
+add the additional parameter `report.only.fixable=true`:
+
+`bin/dita --input=docsrc/userguide.ditamap --format=html5 --report.deprecated=true --report.only.fixable=true`
+
 To get a report on your own content, just change the input map parameter to your own content, and run with
-whatever format and additional parameters you usually use. The log will contain informational messages 
+whatever format and additional parameters you usually use. The log will contain messages 
 for all deprecated markup.
 
 ## Automatically updating deprecated markup
