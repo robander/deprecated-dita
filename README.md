@@ -45,9 +45,9 @@ to be a better way to go.
 
 Install the latest version from https://github.com/robander/deprecated-dita/releases
 
-To install version 0.2 from the DITA-OT command line, in the DITA-OT root directory, run:
+To install version 2.0 from the DITA-OT command line, in the DITA-OT root directory, run:
 
-`bin/dita --install https://github.com/robander/deprecated-dita/releases/download/v0.2/org.metadita.deprecated.zip`
+`bin/dita --install https://github.com/robander/deprecated-dita/releases/download/v2.0/org.metadita.deprecated.zip`
 
 To use the plugin, add the parameter `report.deprecated=true` to any DITA-OT transform that uses the full
 preprocess pipeline. For example, the following command uses the DITA-OT user guide as an input map:
